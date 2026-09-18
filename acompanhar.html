@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Acompanhar Denúncia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            🛡️ Denúncia Segura
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="denunciante.html">
+                Registrar
+            </a>
+
+            <a href="acompanhar.html">
+                Acompanhar
+            </a>
+
+            <a href="admin.html">
+                Delegacia
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+    <div class="container small-container">
+
+        <div class="page-header">
+
+            <span class="badge">
+                ACOMPANHAMENTO
+            </span>
+
+            <h1>
+                Acompanhar Denúncia
+            </h1>
+
+            <p>
+                Digite o protocolo recebido após registrar
+                sua denúncia.
+            </p>
+
+        </div>
+
+
+        <form
+            id="consultaForm"
+            class="form-card"
+        >
+
+            <div class="form-group">
+
+                <label for="protocolo">
+                    Número do protocolo
+                </label>
+
+                <input
+                    type="text"
+                    id="protocolo"
+                    placeholder="Ex.: DEN-123456"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary btn-full"
+            >
+                🔎 Consultar
+            </button>
+
+        </form>
+
+
+        <div id="resultadoConsulta"></div>
+
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

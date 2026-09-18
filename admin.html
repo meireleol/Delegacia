@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Área da Delegacia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            🛡️ Denúncia Segura
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="denunciante.html">
+                Registrar
+            </a>
+
+            <a href="acompanhar.html">
+                Acompanhar
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="page">
+
+    <div class="container">
+
+        <div class="page-header">
+
+            <span class="badge">
+                ADMINISTRADOR
+            </span>
+
+            <h1>
+                Dashboard da Delegacia
+            </h1>
+
+            <p>
+                Gerenciamento das denúncias recebidas.
+            </p>
+
+        </div>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>📋</span>
+
+                <strong id="totalDenuncias">
+                    0
+                </strong>
+
+                <small>
+                    Total de denúncias
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>⏳</span>
+
+                <strong id="emAnalise">
+                    0
+                </strong>
+
+                <small>
+                    Em análise
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🔍</span>
+
+                <strong id="investigacao">
+                    0
+                </strong>
+
+                <small>
+                    Em investigação
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>✅</span>
+
+                <strong id="finalizadas">
+                    0
+                </strong>
+
+                <small>
+                    Finalizadas
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Denúncias recebidas
+                </h2>
+
+
+                <div class="filters">
+
+                    <input
+                        type="search"
+                        id="busca"
+                        placeholder="Pesquisar protocolo..."
+                    >
+
+
+                    <select id="filtroStatus">
+
+                        <option value="">
+                            Todos os status
+                        </option>
+
+                        <option value="Recebida">
+                            Recebida
+                        </option>
+
+                        <option value="Em análise">
+                            Em análise
+                        </option>
+
+                        <option value="Em investigação">
+                            Em investigação
+                        </option>
+
+                        <option value="Finalizada">
+                            Finalizada
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Protocolo
+                            </th>
+
+                            <th>
+                                Categoria
+                            </th>
+
+                            <th>
+                                Data
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Ações
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="tabelaDenuncias"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
