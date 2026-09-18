@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registrar Denúncia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                🛡️ Denúncia Segura
+            </a>
+
+            <nav class="menu">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="denunciante.html">
+                    Registrar Denúncia
+                </a>
+
+                <a href="acompanhar.html">
+                    Acompanhar
+                </a>
+
+                <a href="admin.html">
+                    Delegacia
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="page">
+
+        <div class="container form-container">
+
+
+            <!-- TÍTULO -->
+            <div class="page-header">
+
+                <span class="badge">
+                    DENUNCIANTE
+                </span>
+
+                <h1>
+                    Registrar Denúncia
+                </h1>
+
+                <p>
+                    Preencha as informações abaixo
+                    para registrar uma ocorrência.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <form
+                id="denunciaForm"
+                class="form-card"
+            >
+
+
+                <!-- AVISO -->
+                <div class="alert">
+
+                    🔒
+
+                    <strong>
+                        Atenção:
+                    </strong>
+
+                    Não informe dados pessoais caso
+                    deseje realizar uma denúncia anônima.
+
+                </div>
+
+
+                <!-- CATEGORIA -->
+                <div class="form-group">
+
+                    <label for="categoria">
+                        Categoria da denúncia *
+                    </label>
+
+                    <select
+                        id="categoria"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione uma categoria
+                        </option>
+
+                        <option value="Furto">
+                            Furto
+                        </option>
+
+                        <option value="Roubo">
+                            Roubo
+                        </option>
+
+                        <option value="Violência">
+                            Violência
+                        </option>
+
+                        <option value="Tráfico">
+                            Tráfico
+                        </option>
+
+                        <option value="Corrupção">
+                            Corrupção
+                        </option>
+
+                        <option value="Ameaça">
+                            Ameaça
+                        </option>
+
+                        <option value="Vandalismo">
+                            Vandalismo
+                        </option>
+
+                        <option value="Outro">
+                            Outro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- DATA E LOCAL -->
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="data">
+                            Data da ocorrência *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="local">
+                            Local da ocorrência *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="local"
+                            placeholder="Ex.: Rua das Flores, 100"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- DESCRIÇÃO -->
+                <div class="form-group">
+
+                    <label for="descricao">
+                        Descrição da denúncia *
+                    </label>
+
+                    <textarea
+                        id="descricao"
+                        rows="7"
+                        placeholder="Descreva detalhadamente o que aconteceu..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- INFORMAÇÕES ADICIONAIS -->
+                <div class="form-group">
+
+                    <label for="observacoes">
+                        Informações adicionais
+                    </label>
+
+                    <textarea
+                        id="observacoes"
+                        rows="4"
+                        placeholder="Informe outros detalhes que possam ajudar..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ANONIMATO -->
+                <div class="form-group">
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="anonima"
+                            checked
+                        >
+
+                        <span>
+                            Desejo realizar esta denúncia anonimamente.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    🚨 Enviar Denúncia
+                </button>
+
+
+            </form>
+
+
+            <!-- PROTOCOLO -->
+            <div
+                id="protocoloBox"
+                class="success-box hidden"
+            ></div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Protótipo acadêmico —
+                Sistema de Denúncias Anônimas
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

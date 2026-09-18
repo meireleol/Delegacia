@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Área da Delegacia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                🛡️ Denúncia Segura
+            </a>
+
+            <nav class="menu">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="denunciante.html">
+                    Registrar
+                </a>
+
+                <a href="acompanhar.html">
+                    Acompanhar
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <main class="page">
+
+        <div class="container">
+
+
+            <!-- CABEÇALHO -->
+            <div class="page-header">
+
+                <span class="badge">
+                    ÁREA DA DELEGACIA
+                </span>
+
+                <h1>
+                    Dashboard Administrativo
+                </h1>
+
+                <p>
+                    Gerenciamento das denúncias recebidas.
+                </p>
+
+            </div>
+
+
+            <!-- ESTATÍSTICAS -->
+            <section class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <strong id="totalDenuncias">
+                        0
+                    </strong>
+
+                    <span>
+                        Total de denúncias
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📥
+                    </div>
+
+                    <strong id="recebidas">
+                        0
+                    </strong>
+
+                    <span>
+                        Recebidas
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🔍
+                    </div>
+
+                    <strong id="investigacao">
+                        0
+                    </strong>
+
+                    <span>
+                        Em investigação
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <strong id="finalizadas">
+                        0
+                    </strong>
+
+                    <span>
+                        Finalizadas
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- PAINEL -->
+            <section class="admin-panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Denúncias recebidas
+                        </h2>
+
+                        <p>
+                            Consulte e gerencie os registros.
+                        </p>
+
+                    </div>
+
+
+                    <div class="filters">
+
+                        <input
+                            type="search"
+                            id="busca"
+                            placeholder="Pesquisar protocolo..."
+                        >
+
+
+                        <select id="filtroStatus">
+
+                            <option value="">
+                                Todos os status
+                            </option>
+
+                            <option value="Recebida">
+                                Recebida
+                            </option>
+
+                            <option value="Em análise">
+                                Em análise
+                            </option>
+
+                            <option value="Em investigação">
+                                Em investigação
+                            </option>
+
+                            <option value="Finalizada">
+                                Finalizada
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TABELA -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Protocolo
+                                </th>
+
+                                <th>
+                                    Categoria
+                                </th>
+
+                                <th>
+                                    Data
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Ações
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tabelaDenuncias">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Protótipo acadêmico —
+                Área administrativa
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

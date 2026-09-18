@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Acompanhar Denúncia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                🛡️ Denúncia Segura
+            </a>
+
+            <nav class="menu">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="denunciante.html">
+                    Registrar Denúncia
+                </a>
+
+                <a href="acompanhar.html">
+                    Acompanhar
+                </a>
+
+                <a href="admin.html">
+                    Delegacia
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="page">
+
+        <div class="container small-container">
+
+
+            <div class="page-header">
+
+                <span class="badge">
+                    ACOMPANHAMENTO
+                </span>
+
+                <h1>
+                    Acompanhar Denúncia
+                </h1>
+
+                <p>
+                    Digite o número do protocolo
+                    recebido após o registro.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+            <form
+                id="consultaForm"
+                class="form-card"
+            >
+
+                <div class="form-group">
+
+                    <label for="protocolo">
+                        Número do protocolo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="protocolo"
+                        placeholder="Ex.: DEN-123456"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    🔎 Consultar Denúncia
+                </button>
+
+            </form>
+
+
+            <!-- RESULTADO -->
+            <div
+                id="resultadoConsulta"
+                class="resultado"
+            ></div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Protótipo acadêmico —
+                Sistema de Denúncias Anônimas
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

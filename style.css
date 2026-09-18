@@ -1,0 +1,1389 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --primary: #173b6c;
+
+    --primary-dark: #0d284c;
+
+    --secondary: #2563eb;
+
+    --background: #f4f7fb;
+
+    --white: #ffffff;
+
+    --text: #172033;
+
+    --muted: #64748b;
+
+    --border: #dbe2ea;
+
+    --success: #15803d;
+
+    --warning: #d97706;
+
+    --danger: #dc2626;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--background);
+
+    color:
+        var(--text);
+
+    line-height:
+        1.6;
+
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+
+    width:
+        min(1120px, 92%);
+
+    margin:
+        0 auto;
+
+}
+
+
+.small-container {
+
+    max-width:
+        760px;
+
+}
+
+
+.form-container {
+
+    max-width:
+        850px;
+
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.header {
+
+    background:
+        var(--primary);
+
+    color:
+        white;
+
+}
+
+
+.header-content {
+
+    min-height:
+        70px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+}
+
+
+.logo {
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-size:
+        1.25rem;
+
+    font-weight:
+        bold;
+
+}
+
+
+.menu {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        22px;
+
+}
+
+
+.menu a {
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-size:
+        .95rem;
+
+}
+
+
+.menu a:hover {
+
+    text-decoration:
+        underline;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    padding:
+        90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #ffffff
+        );
+
+}
+
+
+.hero-content {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.4fr .8fr;
+
+    gap:
+        60px;
+
+    align-items:
+        center;
+
+}
+
+
+.badge {
+
+    display:
+        inline-block;
+
+    padding:
+        6px 12px;
+
+    border-radius:
+        30px;
+
+    background:
+        #dbeafe;
+
+    color:
+        #1e40af;
+
+    font-size:
+        .75rem;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        .5px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            3.5rem
+        );
+
+    line-height:
+        1.1;
+
+    margin:
+        18px 0;
+
+}
+
+
+.hero p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.1rem;
+
+    max-width:
+        650px;
+
+}
+
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    gap:
+        12px;
+
+    margin-top:
+        30px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.btn {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border:
+        none;
+
+    border-radius:
+        8px;
+
+    padding:
+        13px 20px;
+
+    text-decoration:
+        none;
+
+    cursor:
+        pointer;
+
+    font-weight:
+        bold;
+
+    transition:
+        .2s;
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--primary);
+
+    color:
+        white;
+
+}
+
+
+.btn-primary:hover {
+
+    background:
+        var(--primary-dark);
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.btn-secondary {
+
+    background:
+        white;
+
+    color:
+        var(--primary);
+
+    border:
+        1px solid var(--border);
+
+}
+
+
+.btn-secondary:hover {
+
+    background:
+        #f8fafc;
+
+}
+
+
+.btn-full {
+
+    width:
+        100%;
+
+}
+
+
+/* =========================================
+   CARD HERO
+========================================= */
+
+.hero-card {
+
+    background:
+        white;
+
+    padding:
+        35px;
+
+    border-radius:
+        18px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, .08);
+
+    text-align:
+        center;
+
+}
+
+
+.shield {
+
+    font-size:
+        4rem;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.features {
+
+    padding:
+        70px 0;
+
+}
+
+
+.section-title {
+
+    text-align:
+        center;
+
+    margin-bottom:
+        35px;
+
+    font-size:
+        2rem;
+
+}
+
+
+.cards {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        25px;
+
+}
+
+
+.card {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    padding:
+        30px;
+
+    border-radius:
+        14px;
+
+    transition:
+        .2s;
+
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, .06);
+
+}
+
+
+.card-icon {
+
+    font-size:
+        2rem;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.card p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.info-section {
+
+    padding:
+        0 0 70px;
+
+}
+
+
+.info-box {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+
+    background:
+        #eff6ff;
+
+    border:
+        1px solid #bfdbfe;
+
+    padding:
+        25px;
+
+    border-radius:
+        14px;
+
+}
+
+
+.info-icon {
+
+    font-size:
+        2.5rem;
+
+}
+
+
+.info-box p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================
+   PÁGINAS
+========================================= */
+
+.page {
+
+    padding:
+        60px 0;
+
+    min-height:
+        calc(100vh - 140px);
+
+}
+
+
+.page-header {
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.page-header h1 {
+
+    margin:
+        10px 0;
+
+    font-size:
+        2.3rem;
+
+}
+
+
+.page-header p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.form-card {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+    padding:
+        30px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, .04);
+
+}
+
+
+.alert {
+
+    padding:
+        15px;
+
+    margin-bottom:
+        25px;
+
+    border-radius:
+        8px;
+
+    background:
+        #eff6ff;
+
+    color:
+        #1e3a8a;
+
+}
+
+
+.form-group {
+
+    margin-bottom:
+        22px;
+
+}
+
+
+.form-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        20px;
+
+}
+
+
+label {
+
+    display:
+        block;
+
+    margin-bottom:
+        7px;
+
+    font-weight:
+        bold;
+
+}
+
+
+input,
+select,
+textarea {
+
+    width:
+        100%;
+
+    padding:
+        12px 14px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+    background:
+        white;
+
+    color:
+        var(--text);
+
+    font:
+        inherit;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline:
+        2px solid #93c5fd;
+
+    border-color:
+        var(--secondary);
+
+}
+
+
+textarea {
+
+    resize:
+        vertical;
+
+}
+
+
+.checkbox {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    align-items:
+        center;
+
+    font-weight:
+        normal;
+
+}
+
+
+.checkbox input {
+
+    width:
+        auto;
+
+}
+
+
+/* =========================================
+   PROTOCOLO
+========================================= */
+
+.success-box {
+
+    background:
+        #ecfdf5;
+
+    color:
+        #166534;
+
+    border:
+        1px solid #bbf7d0;
+
+    padding:
+        25px;
+
+    margin-top:
+        25px;
+
+    border-radius:
+        12px;
+
+}
+
+
+.success-box h2 {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.success-box h3 {
+
+    font-size:
+        2rem;
+
+    margin:
+        15px 0;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.hidden {
+
+    display:
+        none;
+
+}
+
+
+/* =========================================
+   RESULTADO
+========================================= */
+
+.resultado {
+
+    margin-top:
+        25px;
+
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+
+    display:
+        inline-block;
+
+    padding:
+        5px 10px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        bold;
+
+}
+
+
+.status-recebida {
+
+    background:
+        #e0f2fe;
+
+    color:
+        #0369a1;
+
+}
+
+
+.status-analise {
+
+    background:
+        #fef3c7;
+
+    color:
+        #92400e;
+
+}
+
+
+.status-investigacao {
+
+    background:
+        #ede9fe;
+
+    color:
+        #6d28d9;
+
+}
+
+
+.status-finalizada {
+
+    background:
+        #dcfce7;
+
+    color:
+        #166534;
+
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        18px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.stat-card {
+
+    background:
+        white;
+
+    padding:
+        22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+}
+
+
+.stat-icon {
+
+    font-size:
+        1.5rem;
+
+}
+
+
+.stat-card strong {
+
+    display:
+        block;
+
+    font-size:
+        2rem;
+
+    margin:
+        5px 0;
+
+}
+
+
+.stat-card span {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .9rem;
+
+}
+
+
+/* =========================================
+   PAINEL ADMINISTRATIVO
+========================================= */
+
+.admin-panel {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        14px;
+
+    overflow:
+        hidden;
+
+}
+
+
+.panel-header {
+
+    padding:
+        22px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    align-items:
+        center;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.panel-header h2 {
+
+    margin-bottom:
+        4px;
+
+}
+
+
+.panel-header p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        .9rem;
+
+}
+
+
+.filters {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+}
+
+
+.filters input,
+.filters select {
+
+    width:
+        auto;
+
+    min-width:
+        190px;
+
+}
+
+
+/* =========================================
+   TABELA
+========================================= */
+
+.table-container {
+
+    overflow-x:
+        auto;
+
+}
+
+
+table {
+
+    width:
+        100%;
+
+    border-collapse:
+        collapse;
+
+}
+
+
+th,
+td {
+
+    padding:
+        15px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align:
+        left;
+
+}
+
+
+th {
+
+    background:
+        #f8fafc;
+
+    font-size:
+        .9rem;
+
+}
+
+
+td {
+
+    font-size:
+        .9rem;
+
+}
+
+
+.action-btn {
+
+    padding:
+        7px 10px;
+
+    border:
+        none;
+
+    border-radius:
+        6px;
+
+    cursor:
+        pointer;
+
+    background:
+        #dbeafe;
+
+    color:
+        #1e40af;
+
+    margin-right:
+        5px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.action-btn:hover {
+
+    background:
+        #bfdbfe;
+
+}
+
+
+.delete-btn {
+
+    background:
+        #fee2e2;
+
+    color:
+        #991b1b;
+
+}
+
+
+.delete-btn:hover {
+
+    background:
+        #fecaca;
+
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.footer {
+
+    background:
+        #0f172a;
+
+    color:
+        #cbd5e1;
+
+    padding:
+        30px 0;
+
+    text-align:
+        center;
+
+    font-size:
+        .9rem;
+
+}
+
+
+.footer p + p {
+
+    margin-top:
+        5px;
+
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+
+    .header-content {
+
+        flex-direction:
+            column;
+
+        padding:
+            18px 0;
+
+    }
+
+
+    .menu {
+
+        flex-wrap:
+            wrap;
+
+        justify-content:
+            center;
+
+    }
+
+
+    .hero {
+
+        padding:
+            60px 0;
+
+    }
+
+
+    .hero-content {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .panel-header {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+    }
+
+
+    .filters {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .filters input,
+    .filters select {
+
+        width:
+            100%;
+
+        min-width:
+            0;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .hero h1 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .hero-buttons .btn {
+
+        width:
+            100%;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .stats {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .form-card {
+
+        padding:
+            20px;
+
+    }
+
+
+    .info-box {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+    }
+
+
+    .page {
+
+        padding:
+            40px 0;
+
+    }
+
+
+    .page-header h1 {
+
+        font-size:
+            1.9rem;
+
+    }
+
+
+    .menu {
+
+        gap:
+            12px;
+
+    }
+
+
+    .menu a {
+
+        font-size:
+            .85rem;
+
+    }
+
+}
